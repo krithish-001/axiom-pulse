@@ -1,6 +1,5 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { redirect } from "next/navigation"
 
 export const metadata: Metadata = {
   title: "Axiom Pulse",
@@ -12,8 +11,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  redirect("/pulse")
-
   return (
     <html lang="en">
       <body>{children}</body>
